@@ -1,0 +1,36 @@
+{
+  "name": "phaser_tutorial_02",
+  "version": "1.0.0",
+  "description": "this is a fun game created by Stephanie Cure",
+  "main": "example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:webpack": "webpack",
+    "start": "npm run build:webpack && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scure21/phaser_game.git"
+  },
+  "keywords": ["phaser", "game"],
+  "author": "Stephanie Cure",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Scure21/phaser_game/issues"
+  },
+  "homepage": "https://github.com/Scure21/phaser_game#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-redux": "^5.0.6",
+    "webpack": "^3.8.1"
+  }
+}
