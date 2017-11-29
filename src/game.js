@@ -1,10 +1,10 @@
-var game = new Phaser.Game(800, 600, Phaser.AUTO, "", {
+export var game = new Phaser.Game(800, 600, Phaser.AUTO, "app", {
   preload: preload,
   create: create,
   update: update
 });
 
-function preload() {
+export function preload() {
   game.load.image("sky", "assets/sky.png");
   game.load.image("ground", "assets/platform.png");
   game.load.image("star", "assets/star.png");
@@ -21,7 +21,7 @@ var scoreText;
 var monster;
 var walk;
 
-function create() {
+export function create() {
   // Creating the ground and ledges
   // Enable physics
   game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -90,7 +90,7 @@ function create() {
   });
 }
 
-function update() {
+export function update() {
   //  Collide the player and the stars with the platforms
   game.physics.arcade.collide(player, platforms);
   // check for monster collisions with platforms
@@ -124,7 +124,7 @@ function update() {
 }
 
 // Util functions
-function collectStar(player, star) {
+export function collectStar(player, star) {
   // Removes the star from the screen
   star.kill();
 
