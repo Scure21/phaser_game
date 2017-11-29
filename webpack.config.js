@@ -8,7 +8,7 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx"]
   },
-  watch: false,
+  watch: true,
   module: {
     loaders: [
       {

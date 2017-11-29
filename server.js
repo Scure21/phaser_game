@@ -11,4 +11,4 @@ app.use(
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
-app.listen(3030, () => console.log("listening on port 3030!"));
+app.listen(3002, () => console.log("listening on port 3002!"));
